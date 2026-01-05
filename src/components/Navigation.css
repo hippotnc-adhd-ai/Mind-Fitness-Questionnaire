@@ -1,0 +1,106 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.progress {
+  font-size: 0.9rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.nav-btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.nav-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.nav-btn.prev {
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+
+.nav-btn.prev:hover:not(:disabled) {
+  background: #e5e7eb;
+}
+
+.nav-btn.next,
+.nav-btn.submit {
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(96, 165, 250, 0.35);
+}
+
+.nav-btn.next:hover:not(:disabled),
+.nav-btn.submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(96, 165, 250, 0.45);
+}
+
+.nav-btn.submit {
+  background: linear-gradient(135deg, #f472b6 0%, #a78bfa 100%);
+  box-shadow: 0 4px 12px rgba(244, 114, 182, 0.35);
+}
+
+.nav-btn.submit:hover:not(:disabled) {
+  box-shadow: 0 6px 16px rgba(244, 114, 182, 0.45);
+}
+
+/* 디버그 네비게이션 */
+.debug-nav {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  z-index: 9999;
+}
+
+.debug-label {
+  font-size: 0.7rem;
+  color: #fbbf24;
+  font-weight: 600;
+}
+
+.debug-btn {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: #374151;
+  color: white;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.debug-btn:hover:not(:disabled) {
+  background: #4b5563;
+}
+
+.debug-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}

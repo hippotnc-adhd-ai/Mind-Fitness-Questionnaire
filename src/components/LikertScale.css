@@ -1,0 +1,179 @@
+.likert-scale {
+  margin: 0.8rem 0;
+}
+
+.likert-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.25rem;
+}
+
+.likert-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.15s;
+  flex: 1;
+}
+
+.likert-option:hover {
+  transform: scale(1.1);
+}
+
+.likert-option input {
+  display: none;
+}
+
+.likert-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid #d1d5db;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #6b7280;
+  transition: all 0.15s;
+}
+
+.likert-option:hover .likert-circle {
+  border-color: #a78bfa;
+  color: #7c3aed;
+}
+
+.likert-option input:checked + .likert-circle {
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+  transform: scale(1.05);
+}
+
+.likert-scale-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.6rem;
+}
+
+.likert-scale-labels span {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  flex: 1;
+}
+
+.likert-scale-labels span:first-child {
+  text-align: center;
+}
+
+.likert-scale-labels span:last-child {
+  text-align: center;
+}
+
+/* 슬라이더용 라벨 (2개만) */
+.slider-scale-labels span {
+  flex: none;
+}
+
+.slider-scale-labels span:first-child {
+  text-align: left;
+}
+
+.slider-scale-labels span:last-child {
+  text-align: right;
+}
+
+/* 슬라이더 스타일 */
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.likert-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to right, #e0e7ff, #c4b5fd);
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.likert-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.4);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.likert-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.5);
+}
+
+.likert-slider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.4);
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2px;
+}
+
+.slider-label {
+  font-size: 0.7rem;
+  color: #9ca3af;
+  width: 20px;
+  text-align: center;
+  transition: all 0.15s;
+}
+
+.slider-label.active {
+  color: #7c3aed;
+  font-weight: 700;
+  transform: scale(1.2);
+}
+
+
+/* 모바일 반응형 */
+@media (max-width: 540px) {
+  .likert-circle {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+
+  .likert-options {
+    gap: 0.15rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .likert-circle {
+    width: 26px;
+    height: 26px;
+    font-size: 0.7rem;
+    border-width: 1.5px;
+  }
+
+  .likert-options {
+    gap: 0.1rem;
+  }
+}

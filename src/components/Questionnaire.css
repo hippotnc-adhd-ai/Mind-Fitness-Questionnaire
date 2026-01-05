@@ -1,0 +1,152 @@
+.questionnaire {
+  background: white;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.questionnaire-title {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #374151;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.questionnaire-loading,
+.questionnaire-error {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.1rem;
+  color: #6b7280;
+}
+
+.questionnaire-error {
+  color: #dc2626;
+}
+
+.questionnaire-complete,
+.questionnaire-start {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.questionnaire-complete h2,
+.questionnaire-start h1 {
+  color: #374151;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.questionnaire-complete p,
+.questionnaire-start p {
+  color: #6b7280;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.start-description {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.start-description p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+.start-description p:last-child {
+  margin-bottom: 0;
+}
+
+.start-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin: 2rem 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.company-logo {
+  height: 28px;
+  width: auto;
+}
+
+.company-name {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.start-btn {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+  color: white;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(96, 165, 250, 0.4);
+}
+
+.start-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(96, 165, 250, 0.5);
+}
+
+.restart-btn {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background: #f3f4f6;
+  color: #374151;
+  border-radius: 25px;
+  font-weight: 500;
+  border: 1px solid #d1d5db;
+}
+
+.restart-btn:hover {
+  background: #e5e7eb;
+}
+
+.complete-description {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.complete-description p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+.complete-description p:last-child {
+  margin-bottom: 0;
+}
+
+.complete-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #f9fafb;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.company-email {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
